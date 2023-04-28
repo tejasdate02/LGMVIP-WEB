@@ -1,0 +1,77 @@
+<!--Simple Calculator By Dheeraj Nale (Internship at LetsGrowMore)-->
+<!--HTML file Starting With Header Section for the Calculator-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Simple Calculator- Dheeraj Nale</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70447982-5"></script>
+	<script>
+		  window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			    gtag('config', 'UA-70447982-5');
+			</script>
+		</head>
+
+<!--Body Section of the Calculator-->
+<body>
+	<div class="container">
+		<h1><a style="text-decoration: none; color: #f1750f; margin-left: 0.25rem;" href="" onclick="location.reload();">CALCULATOR</a>
+			<img id="historybutton" src="history.png"></h1 >
+		<div class="calculator">
+			<input type="text" name="screen" id="answer" readonly>
+			<table>
+				<tr>
+					<td><button>(</button></td>
+					<td><button>)</button></td>
+					<td><button style="background-color: #d83422; font-weight: bold; color: #ecf0f1;">Clear</button></td>
+					<td><button>%</button></td>
+				</tr>
+				<tr>
+					<td><button>7</button></td>
+					<td><button>8</button></td>
+					<td><button>9</button></td>
+					<td><button>X</button></td>
+				</tr>
+				<tr>
+					<td><button>4</button></td>
+					<td><button>5</button></td>
+					<td><button>6</button></td>
+					<td><button>-</button></td>
+				</tr>
+				<tr>
+					<td><button>1</button></td>
+					<td><button>2</button></td>
+					<td><button>3</button></td>
+					<td><button>+</button></td>
+				</tr>
+				<tr>
+					<td><button>0</button></td>
+					<td><button style="font-weight: bold;">.</button></td>
+					<td><button>/</button></td>
+					<td><button style="background-color: #1cdb6b; font-weight: bold; color: #ecf0f1;">=</button></td>
+				</tr>
+			</table>
+			<hr style="max-width: 50vw;">
+			<div style="font-size:1rem; display: flex; align-items: center; justify-content: center;">Made With <img style="margin: 0.15rem;" src="footer.png">By<a style="text-decoration: none; color: #f1690f; margin-left: 0.25rem;"
+                target="_blank" href="https://github.com/dheerajnale">@Dheeraj Nale</a></div>
+		</div>
+	</div>
+	<div id="bar1" class = "bars"></div>
+	<div id="bar2" class = "bars"></div>
+	<div id="history">
+	</div>
+    <div id="turn">
+    PLEASE TURN ON YOUR DEVICE
+	</div>
+</body>
+
+<!-------link with JavaScript File------->
+<script src="history.js"></script>
+<script src="calculation.js"></script>
+</html>
