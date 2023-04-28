@@ -1,0 +1,83 @@
+<!--HTML file for Registration Form (Dheeraj Nale- Internship at LetsGrowMore)-->
+<!--Start of the HTML file-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DheeerajN- Registration Form</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+    background-image:url("./218587.jpg");
+	background-size:cover;
+	background-repeat: repeat;
+}
+</style>
+</head>
+
+<!--body of the HTML file-->
+<!--Contents of Registration Form-->
+<body>
+    <!--<div class="container">-->
+      <h2 class="glow">REGISTRATION FORM 2023</h2>
+      <section>
+        <div class="form"> 
+            <form>
+                <h4>Registration Form</h4>
+                <div class="labels">
+                    <label for="name" class="inputs-labels">FULL-NAME: </label>
+                    <input type="text" name="name" id="name" class="inputs" placeholder="Enter Your Name">
+                </div>
+                <div class="labels">
+                    <label for="email" class="inputs-labels">EMAIL-ID: </label>
+                    <input type="email" name="email" id="email" class="inputs" placeholder="Enter Valid Email Address">
+                </div>
+                <div class="labels">
+                    <label for="website" class="inputs-labels"> WEBSITE URL: </label>
+                    <input type="url" name="website" id="website" class="inputs" placeholder="Enter your Website URL">
+                </div>
+                <div>
+                    <label for="image" class="inputs-labels">UPLOAD-IMAGE:</label>
+                    <input type="file" name="image" id="image" class="inputs">
+                </div>
+                <!--Gender Section-->
+                <div class="radio">
+                    <label class="radio-labels">GENDER:</label>                    
+                    <div class="gender2">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male" class="gen">MALE</label><br>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">FEMALE</label><br>
+                        <input type="radio" name="gender" id="others" value="others">
+                        <label for="others">OTHERS</label></div>
+                </div>
+                <div class="labels">
+                    <label for="skills" class="inputs-labels"> SKILLS:</label>
+                    <input type="skills" name="skills" id="skills" class="inputs" placeholder="Enter Your skills">
+                </div>
+                <div>
+                    <button type="reset" class="btn-danger" value="Cancel">CLEAR</button>
+                    <input type="submit" value="Enroll" class="register-btn">
+                </div>
+            </form>
+        </div>
+
+<!--Registration Details on Same Page-->
+        <div class="display">
+            <h4>REGISTRATION DETAILS</h4>
+            <hr>
+            <div class="cards">
+         </div>
+        </div>
+      </section>
+<!--This is Footer Section/Copyright Section-->
+      <footer>
+        <p class="copyright">&copy; Copyright 2023 <a href="#">Dheeraj Nale</a></p>
+      </footer>
+<!--Link the JavaScript file-->
+      <script src="script.js"></script>
+    </div>
+</body>
+</html>

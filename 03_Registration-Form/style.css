@@ -1,0 +1,245 @@
+/*------CSS file for the Registration Form------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/*---CSS for the Scrollbar--*/
+::-webkit-scrollbar{
+  width: 7px;
+  height:10px;
+}
+::-webkit-scrollbar-track{
+  background:rgb(0, 0, 0); 
+}
+::-webkit-scrollbar-thumb{
+  background:rgb(255, 255, 255); 
+}
+::-webkit-scrollbar-thumb:hover{
+  background:rgb(92, 85, 85) ; 
+}
+
+/*----------GLOW Effect for the Title--------*/
+@keyframes glow{
+  from{
+    text-shadow: 0 0 10px #ee7600, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #ee7600, 0 0 60px #ee7600, 0 0 70px #ee7600;
+  }
+  to{
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #006400, 0 0 40px #006400, 0 0 50px #006400,
+                   0 0 60px #006400, 0 0 70px #006400, 0 0 80px #006400;
+  }
+}
+body{
+    background-color:rgb(114, 162, 173);
+}
+section .form form div .gender2 input{
+  margin-left:13.25rem;
+  margin-bottom: 0.6rem;
+}
+section .form form div label .gen{
+  cursor:pointer;
+}
+section .form form div .gender2 label{
+  font-size:1rem;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+}
+
+/*---GLOW Effect---*/
+.glow{
+  font-size:35px;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+h2{
+  text-align: center;
+  /*background-color:rgb(245, 253, 253);*/
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  font-size:1.0rem;
+  /*box-shadow:0px 5px 1.2px 0px rgb(0, 115, 255);*/
+}
+
+/*----Registration Form------*/
+section .form form h4, h4{
+  text-align:center;
+  color:rgb(255, 255, 255);
+  font-size:2.2rem;
+}
+
+/*---Labels in the Form*/
+.form form label{
+  margin-left:1rem;
+  color:rgb(255, 255, 255);
+  font-size:1.25rem;
+  font-weight:250;
+  width:12rem;
+  display: inline-block;
+}
+
+.form{
+    /*border: 0px double rgb(255, 255, 255);*/
+    border-radius: 18px;
+    margin: 10px 20px;
+    padding: 10px;
+    /*background-color: rgb(255, 255, 255);*/
+    margin-bottom:10px;
+    margin-left:-35px;
+}
+section{
+  width: 90%;
+  margin: 0 auto;
+}
+.inputs{
+  padding: 0.8rem;
+  width: 50%;
+  color: rgb(84, 107, 139);
+}
+.labels input{
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom:2px;
+}
+
+/*--Enroll and Reset Button*/
+.register-btn, .clear-btn{
+  margin-top:1rem;
+  padding: 0.5rem 4.0rem;
+  background-color: #ffffff;
+  border-radius:10px;
+  color: rgb(29, 11, 27);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px;
+}
+.register-btn:hover{
+  background-color:rgb(67, 211, 89);
+  color:#ffffff;
+  transition: 0.01s;
+}
+
+/*-----Reset Button-----*/
+.btn-danger{
+  background-color:#ffffff;
+  border-radius:10px;
+  color: rgb(29, 11, 27);
+  font-size: 1.3rem;
+  text-align:center;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px;
+  padding: 0.5rem 4.0rem;
+  margin-left: 20px;
+  margin-right:20px;
+}
+.btn-danger:hover{
+  background-color:rgb(226, 76, 76);
+  color:#ffffff;
+  transition: 0.01s;
+}
+
+/*----Registration Details------*/
+.display{
+  border: 0px double rgb(255, 255, 255);
+  border-radius: 18px;
+  margin: -200px -20px;
+  padding: 20px;
+  width:60%;
+  height:550px;
+  background-color: rgb(115, 142, 179);
+  margin-bottom:10px;
+  overflow:auto;
+  margin-right:-20px;
+}
+.display h3{
+  text-align: center;
+  color: rgb(0, 115, 255);
+  padding: 1rem;
+  font-size: 23px;
+}
+.display article{
+  margin-bottom: 1rem;
+}
+
+/*-----CSS for Card in Registration Details*/
+@media screen and (min-width: 768px) {
+  .form {
+    width: 85%;
+  }
+  .display {
+    width: 80%;
+    margin-top:0.6rem;
+    margin-left: 2rem;
+  }
+  section {
+    display: flex;
+  }
+}
+
+/*----Card In the Registration Form-----*/
+.card{
+  border: 0px groove rgb(71, 91, 132);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  box-shadow: 2px 3px 5px; 
+  border-radius: 10px;
+}
+.card-body{
+  display: grid;
+  text-transform: capitalize;
+}
+
+/*---CSS for details in the Registration Form-----*/
+h5{
+  margin-left:0rem;
+  margin-top: 4px;
+  text-transform:uppercase;
+  color:rgb(255, 255, 255);
+}
+.email{
+  margin-left:0rem;
+  text-transform:none;
+  color:rgb(255, 255, 255);
+}
+.gender{
+  margin-left:0rem;
+  text-transform:capitalize;
+  color:rgb(255, 255, 255);
+}
+.website{
+  margin-left:0rem;
+  text-transform:none;
+  color:rgb(255, 255, 255);
+}
+.skills{
+  margin-left:0rem;
+  text-transform:none;
+  color:rgb(255, 255, 255);
+}
+.image img{
+  width:8rem;
+  height:8rem;
+  margin-left:auto;
+  margin-top: 3px;
+  border-radius: 8px;
+}
+
+/*----Footer Section------*/
+
+.copyright {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align:center;
+  padding: 0.1rem;
+  border-top: 1px solid var(--action-primary);
+}
